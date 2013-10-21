@@ -1,0 +1,229 @@
+<style>
+.jumbotron, .carousel {
+    margin-top: 5%;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+ body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+ .navbar-wrapper {
+    position: relative;
+    z-index: 15;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+ .carousel {
+    margin-bottom: 60px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    margin-top: -90px;
+}
+/* Since positioning the image, we need to help out the caption */
+ .carousel-caption {
+    z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+ .carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+ .marketing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Center align the text within the three columns below the carousel */
+ .marketing .col-lg-4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Featurettes
+------------------------- */
+ .featurette-divider {
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+ .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+ @media (min-width: 768px) {
+    /* Remove the edge padding needed for mobile */
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+</style>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Example headline.</h1>
+                    <p>Pinterest artisan 3 wolf moon +1 slow-carb, hoodie tote bag farm-to-table Thundercats. Street art 3 wolf moon roof party skateboard. Selfies before they sold out mumblecore, artisan scenester freegan next level meggings salvia Truffaut ethnic.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Sign up today</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Bitters XOXO Godard Neutra pug Carles, gentrify trust fund artisan Blue Bottle ennui freegan lo-fi. Intelligentsia Austin tofu Neutra.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>One more for good measure.</h1>
+                    <p>Raw denim chia cred polaroid, cardigan American Apparel mumblecore dreamcatcher hashtag artisan irony hoodie art party. 3 wolf moon scenester aesthetic church-key gastropub.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-- /.carousel -->
+
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-8">
+            <h2>Our Mission:</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/logo.png" />
+                    </div>
+
+                    <p>I am a fellow traveler who has spent most of his life back packing in the wilderness of North America. The main tenant of backpacking is to leave no trace behind. This means that not only do I leave no impact of my existence, I help reduce the impact of other humans on the environment.</p>
+                    <p>When people travel and leave their house behind in the care of others, it can feel very intrusive. My goal is to give you that peace of mind that when you return home your house and pets will be exactly as you left them without any feeling that someone was watching your house.</p>
+                </div>
+
+        </div>
+        <div class="col-lg-4">
+            <h2><a href="#/services/petcheck">Pet Check - $5</a>
+            </h2>
+            <p>I will come by and feed and tend to your animals and plants. I will also pick up mail and newspapers. Special animal requirements might cost more. Perfect for two to three day trips</p>
+        </div>
+    </div>
+
+    <!--  Service Row 1 -->
+    <div class="row">
+
+        <div class="col-lg-4">
+            <h2><a href="#/services/superpetcheck">Super Pet Check - $10</a>
+            </h2>
+            <p>I will come by and feed and tend to your animals and plants. I will also pick up mail and newspapers. Special animal requirements might cost more. In addition, I will provide two secure online camera feeds of your animals food and water area and their main play area. Perfect for two to three day trips with added comfort</p>
+        </div>
+        <div class="col-lg-4">
+            <h2><a href="#/services/housesit">House Sitting - $35</a>
+            </h2>
+            <p>I will watch your house and provide services such as picking up mail and newspapers, taking care of morning and afternoon pet needs including walking and playing, and providing security that your house is not vacant. Household needs for inclement weather is included.</p>
+        </div>
+        <div class="col-lg-4">
+            <h2><a href="#/services/houseconnect">House Sit Connect - $60</a>
+            </h2>
+            <h4>Sequoia Plan</h4>
+            <p>In addition to the Oak Plan, you will be connected with two secure live webcams that you can access to see your animals food and water area and their main play area. An individual private twitter feed to get daily updates on your animal, is included.</p>
+        </div>
+    </div>
+
+
+
+    <!--  Service Row 3 -->
+    <div class="row">
+        <div class="col-lg-4">
+            <h2><a href="#/services/honeydo">Honey Do Tasks - $75+</a>
+            </h2>
+            <p>Changing fixtures, yard work, and small repairs can be included. Price will vary depending on job.</p>
+        </div>
+        <div class="col-lg-4">
+            <h2><a href="#/services/addons">Add Ons</a>
+            </h2>
+            <ul>
+                <li>Gps tracker tab for up to two dogs or cats for added sense of security - $50</li>
+                <li>Personal Twitter feed on daily updates of your animal. - $5</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <hr>

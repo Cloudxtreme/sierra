@@ -1,0 +1,16 @@
+<FilesMatch "\\.js$">
+  ForceType text/javascript
+  Header set Content-Encoding: gzip
+</FilesMatch>
+
+<FilesMatch "\\.css$">
+  ForceType text/css
+  Header set Content-Encoding: gzip
+</FilesMatch>
+ 
+
+ <FilesMatch "\\.html$">
+  ForceType text/html
+  Header set Content-Encoding: gzip
+</FilesMatch>
+ 
